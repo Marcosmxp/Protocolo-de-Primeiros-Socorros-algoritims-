@@ -9,4 +9,4 @@ Design responsivo para diferentes telas
 O programa está pronto para uso e pode ser testado abrindo o arquivo index.html no navegador.
 # Meu Projeto
 
-![Diagrama de Arquitetura](https://imgur.com/a/c5LBBag)
+![interface](https://imgur.com/a/c5LBBag)
