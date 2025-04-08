@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo de Primeiros Socorros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Protocolo de Primeiros Socorros</h1>
+        
+        <div class="human-body">
+            <!-- Boneco humano será renderizado via SVG -->
+            <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+                <!-- Cabeça -->
+                <circle cx="100" cy="50" r="30" id="head" class="body-part"/>
+                <!-- Tronco -->
+                <rect x="85" y="80" width="30" height="80" id="torso" class="body-part"/>
+                <!-- Braços -->
+                <line x1="85" y1="90" x2="50" y2="120" id="left-arm" class="body-part"/>
+                <line x1="115" y1="90" x2="150" y2="120" id="right-arm" class="body-part"/>
+                <!-- Pernas -->
+                <line x1="90" y1="160" x2="70" y2="220" id="left-leg" class="body-part"/>
+                <line x1="110" y1="160" x2="130" y2="220" id="right-leg" class="body-part"/>
+            </svg>
+        </div>
+
+        <div class="protocol-steps">
+            <div id="current-step" class="step">
+                <h2 id="step-title">Passo 1: Avaliar condições de segurança</h2>
+                <p id="step-description">Equipar com EPI (Bata, Máscara FFP2, Proteção ocular e Luvas de nitrilo)</p>
+            </div>
+
+            <div class="interaction-area">
+                <div id="options" class="options">
+                    <!-- Opções serão inseridas via JavaScript -->
+                </div>
+
+                <div class="drop-zones">
+                    <div id="correct-drop" class="drop-zone">Correto</div>
+                    <div id="incorrect-drop" class="drop-zone">Incorreto</div>
+                </div>
+
+                <div id="feedback" class="feedback"></div>
+            </div>
+
+            <div class="navigation">
+                <button id="next-btn" class="btn">Próximo</button>
+                <button id="reset-btn" class="btn">Reiniciar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
